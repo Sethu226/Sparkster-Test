@@ -337,17 +337,6 @@ this.onDblClick = this.onDblClick.bind(this);
 		target.style.fontFamily = value;
 	}
 	
-	static letterSpacing(id, value) {
-		const target = (arguments.length === 0)?this: document.getElementById(id);
-		// We'll return the value of the property if no arguments have been passed in.
-		// This is a different case from supplying undefined explicitly in which case the value undefined will be set to the property value.
-		// If only the id is supplied, we want to return a value.
-		// The id defaults to this.
-		if (arguments.length < 2)
-			return target.style.letterSpacing || "1px";
-		target.style.letterSpacing = value;
-	}
-	
 	static fontSize(id, value) {
 		const target = (arguments.length === 0)?this: document.getElementById(id);
 		// We'll return the value of the property if no arguments have been passed in.
@@ -410,7 +399,7 @@ this.onDblClick = this.onDblClick.bind(this);
 		// If only the id is supplied, we want to return a value.
 		// The id defaults to this.
 		if (arguments.length < 2)
-			return target.style.letterSpacing;
+			return target.style.letterSpacing || "1px";
 		target.style.letterSpacing = value;
 	}
 	
