@@ -30,16 +30,16 @@ class MyCoolLabel {
 		const [id, value] = args;
 		const target = document.getElementById(id);
 		if (value === undefined)
-			return target.style.textColor;
-		target.style.textColor = value;
+			return target.style.color;
+		target.style.color = value;
 	}
 	
 	static linkColor(...args) {
 		const [id, value] = args;
 		const target = document.getElementById(id);
 		if (value === undefined)
-			return target.style.linkColor;
-		target.style.linkColor = value;
+			return target.style.color;
+		target.style.color = value;
 	}
 	
 	static opacity(...args) {
@@ -102,8 +102,8 @@ class MyCoolLabel {
 		const [id, value] = args;
 		const target = document.getElementById(id);
 		if (value === undefined)
-			return target.style.borderSize;
-		target.style.borderSize = value;
+			return target.style.borderWidth;
+		target.style.borderWidth = value;
 	}
 	
 	static borderStyle(...args) {
@@ -206,8 +206,8 @@ class MyCoolLabel {
 		const [id, value] = args;
 		const target = document.getElementById(id);
 		if (value === undefined)
-			return target.style.rows;
-		target.style.rows = value;
+			return target.style.grid-row;
+		target.style.grid-row = value;
 	}
 	
 	static columns(...args) {
@@ -230,8 +230,8 @@ class MyCoolLabel {
 		const [id, value] = args;
 		const target = document.getElementById(id);
 		if (value === undefined)
-			return target.style.colGap;
-		target.style.colGap = value;
+			return target.style.columnGap;
+		target.style.columnGap = value;
 	}
 	
 	static fontFamily(...args) {
